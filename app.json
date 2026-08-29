@@ -1,7 +1,7 @@
 {
   "id": "2f89b38c-6251-4885-a524-03563e87a9f1",
-  "name": "API Integrations",
-  "publisher": "Default Publisher",
+  "name": "Odoo API Integrations",
+  "publisher": "Dev",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
@@ -29,4 +29,5 @@
   "features": [
     "NoImplicitWith"
   ]
+  
 }
