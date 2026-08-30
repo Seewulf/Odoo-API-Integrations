@@ -61,7 +61,6 @@ codeunit 50100 "Odoo API Management"
         RequestMessage.Content := RequestContent;
 
         // Message('About to call: %1', OdooSetup."Odoo Base URL" + '/jsonrpc');
-        // Message('%1', ResponseMessage.Content().ReadAs(ResponsePayload));
         // if not Client.Send(RequestMessage, ResponseMessage) then
         //     Error('Send failed. GetLastErrorText: %1', GetLastErrorText());
         if not Client.Send(RequestMessage, ResponseMessage) then
@@ -89,7 +88,6 @@ codeunit 50100 "Odoo API Management"
         if not ResponseJson.ReadFrom(Payload) then
             Error('Invalid JSON received from Odoo.');
 
-        // Odoo wraps failures in an "error" key instead of an HTTP error code
         if ResponseJson.Get('error', ErrorToken) then
             Error('Odoo returned an error: %1', Format(ErrorToken));
 
