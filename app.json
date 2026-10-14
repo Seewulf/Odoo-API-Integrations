@@ -1,18 +1,18 @@
 {
   "id": "2f89b38c-6251-4885-a524-03563e87a9f1",
   "name": "Odoo API Integrations",
-  "publisher": "Dev",
-  "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
+  "publisher": "Prabin Bhusal",
+  "version": "1.1.0.0",
+  "brief": "Imports products from Odoo into Business Central through Odoo's JSON-RPC API.",
+  "description": "Fetches product templates from Odoo into a staging table where they can be reviewed, then creates Business Central items from them. The Odoo API key is kept in isolated storage.",
   "privacyStatement": "",
   "EULA": "",
-  "help": "",
-  "url": "",
+  "help": "https://github.com/Seewulf/Odoo-API-Integrations",
+  "url": "https://github.com/Seewulf/Odoo-API-Integrations",
   "logo": "",
   "dependencies": [],
   "screenshots": [],
-  "platform": "1.0.0.0",
+  "platform": "28.0.0.0",
   "application": "28.0.0.0",
   "idRanges": [
     {
@@ -29,5 +29,4 @@
   "features": [
     "NoImplicitWith"
   ]
-  
 }

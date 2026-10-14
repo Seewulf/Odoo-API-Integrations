@@ -2,17 +2,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Local BC Container",
+            "name": "Cloud sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "startupObjectId": 50100,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "schemaUpdateMode": "Synchronize"
+        },
+        {
+            "name": "Local BC container",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
             "server": "http://bcserver",
             "serverInstance": "BC",
-            "tenant": "default", 
+            "tenant": "default",
             "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "startupObjectId": 50100,
             "startupObjectType": "Page",
-            "breakOnError": true,
+            "breakOnError": "All",
             "launchBrowser": true,
             "schemaUpdateMode": "ForceSync"
         }
