@@ -1,0 +1,9 @@
+# AL symbols and build output
+.alpackages/
+.snapshots/
+*.app
+
+# VS Code / AL tooling cache
+.vscode/.alcache/
+.vscode/rad.json
+.altestrunner/
